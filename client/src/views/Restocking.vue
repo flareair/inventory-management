@@ -233,18 +233,18 @@ export default {
 .budget-value {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-primary);
 }
 
 .budget-slider {
   width: 100%;
-  accent-color: #2563eb;
+  accent-color: var(--accent-yellow);
 }
 
 .empty-state {
   padding: 3rem 1rem;
   text-align: center;
-  color: #64748b;
+  color: var(--text-secondary);
   font-size: 0.938rem;
 }
 
@@ -254,11 +254,11 @@ export default {
 }
 
 .success-message {
-  background: #d1fae5;
-  border: 1px solid #6ee7b7;
-  color: #065f46;
+  background: rgba(85, 230, 111, 0.14);
+  border: 1px solid rgba(85, 230, 111, 0.4);
+  color: var(--success);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   margin: 1rem 0;
   font-size: 0.938rem;
 }
@@ -269,25 +269,25 @@ export default {
   align-items: center;
   margin-top: 1.25rem;
   padding-top: 1rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--border);
 }
 
 .selected-total {
   font-size: 0.938rem;
   font-weight: 600;
-  color: #0f172a;
+  color: var(--text-primary);
 }
 
 .selected-total.over {
-  color: #dc2626;
+  color: var(--error);
 }
 
 .place-order-btn {
   padding: 0.625rem 1.5rem;
-  background: #2563eb;
-  color: white;
+  background: var(--accent-yellow);
+  color: #060606;
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-weight: 600;
   font-size: 0.938rem;
   cursor: pointer;
@@ -295,11 +295,12 @@ export default {
 }
 
 .place-order-btn:hover:not(:disabled) {
-  background: #1d4ed8;
+  background: var(--accent-yellow-hover);
 }
 
 .place-order-btn:disabled {
-  background: #cbd5e1;
+  background: var(--surface-elevated);
+  color: var(--text-tertiary);
   cursor: not-allowed;
 }
 </style>
