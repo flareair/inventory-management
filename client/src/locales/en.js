@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -106,6 +107,8 @@ export default {
     title: 'Orders',
     description: 'View and manage customer orders',
     allOrders: 'All Orders',
+    submittedOrders: 'Submitted Orders',
+    noSubmittedOrders: 'No restock orders submitted yet',
     totalOrders: 'Total Orders',
     totalRevenue: 'Total Revenue',
     avgOrderValue: 'Avg Order Value',
@@ -125,7 +128,10 @@ export default {
       totalValue: 'Total Value',
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
-      actualDelivery: 'Actual Delivery'
+      actualDelivery: 'Actual Delivery',
+      totalCost: 'Total Cost',
+      submittedDate: 'Submitted Date',
+      leadTime: 'Lead Time (days)'
     }
   },
 
@@ -188,6 +194,35 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Generate budget-aware restock recommendations and submit purchase orders',
+    budgetLabel: 'Budget',
+    recommendations: 'Recommendations',
+    selectedTotal: 'Selected total: {selected} of {budget}',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    noRecommendations: 'No items can be recommended within this budget. Try increasing the budget.',
+    orderSuccess: 'Order {orderNumber} placed — {count} items, arriving in {days} days',
+    reasons: {
+      belowReorderPoint: 'Below reorder point',
+      increasingDemand: 'Increasing demand',
+      demandShortfall: 'Demand shortfall'
+    },
+    table: {
+      select: 'Select',
+      sku: 'SKU',
+      name: 'Name',
+      category: 'Category',
+      warehouse: 'Warehouse',
+      reason: 'Reason',
+      recommendedQuantity: 'Recommended Qty',
+      unitCost: 'Unit Cost',
+      recommendedCost: 'Recommended Cost'
+    }
+  },
+
   // Filters
   filters: {
     timePeriod: 'Time Period',
@@ -204,6 +239,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
