@@ -69,6 +69,9 @@ npm install && npm run dev
 - Data: `server/data/*.json`
 - Styles: `client/src/App.vue`
 
+## Screenshots
+- Always save screenshots to `temp/` (create it if missing), never in the repo root.
+
 ## Design System
 - Colors: Slate/gray (#0f172a, #64748b, #e2e8f0)
 - Status: green/blue/yellow/red
