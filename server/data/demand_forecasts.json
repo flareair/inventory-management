@@ -6,7 +6,12 @@
     "current_demand": 300,
     "forecasted_demand": 450,
     "trend": "increasing",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "San Francisco",
+    "unit_cost": 24.99,
+    "quantity_on_hand": 300,
+    "reorder_point": 350
   },
   {
     "id": "2",
@@ -15,7 +20,12 @@
     "current_demand": 150,
     "forecasted_demand": 152,
     "trend": "stable",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "Tokyo",
+    "unit_cost": 89.5,
+    "quantity_on_hand": 150,
+    "reorder_point": 140
   },
   {
     "id": "3",
@@ -24,7 +34,12 @@
     "current_demand": 500,
     "forecasted_demand": 600,
     "trend": "increasing",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "London",
+    "unit_cost": 12.75,
+    "quantity_on_hand": 500,
+    "reorder_point": 550
   },
   {
     "id": "4",
@@ -33,7 +48,12 @@
     "current_demand": 50,
     "forecasted_demand": 35,
     "trend": "decreasing",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "Tokyo",
+    "unit_cost": 445.0,
+    "quantity_on_hand": 50,
+    "reorder_point": 60
   },
   {
     "id": "5",
@@ -42,7 +62,12 @@
     "current_demand": 800,
     "forecasted_demand": 950,
     "trend": "increasing",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "San Francisco",
+    "unit_cost": 8.25,
+    "quantity_on_hand": 800,
+    "reorder_point": 900
   },
   {
     "id": "6",
@@ -51,7 +76,12 @@
     "current_demand": 120,
     "forecasted_demand": 121,
     "trend": "stable",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Actuators",
+    "warehouse": "London",
+    "unit_cost": 156.0,
+    "quantity_on_hand": 120,
+    "reorder_point": 125
   },
   {
     "id": "7",
@@ -60,7 +90,12 @@
     "current_demand": 250,
     "forecasted_demand": 252,
     "trend": "stable",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Power Supplies",
+    "warehouse": "San Francisco",
+    "unit_cost": 18.99,
+    "quantity_on_hand": 420,
+    "reorder_point": 180
   },
   {
     "id": "8",
@@ -69,7 +104,12 @@
     "current_demand": 180,
     "forecasted_demand": 182,
     "trend": "stable",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Sensors",
+    "warehouse": "London",
+    "unit_cost": 89.5,
+    "quantity_on_hand": 125,
+    "reorder_point": 150
   },
   {
     "id": "9",
@@ -78,6 +118,11 @@
     "current_demand": 95,
     "forecasted_demand": 96,
     "trend": "stable",
-    "period": "Next 30 days"
+    "period": "Next 30 days",
+    "category": "Controllers",
+    "warehouse": "San Francisco",
+    "unit_cost": 45.0,
+    "quantity_on_hand": 95,
+    "reorder_point": 110
   }
 ]
