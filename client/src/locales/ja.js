@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '再入荷',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -126,7 +127,57 @@ export default {
       status: 'ステータス',
       expectedDelivery: '予定配達日',
       actualDelivery: '実際の配達日'
+    },
+    submittedOrders: {
+      title: '提出済み注文',
+      empty: 'まだ再入荷注文は提出されていません',
+      table: {
+        orderNumber: '注文番号',
+        items: '品目',
+        totalValue: '合計金額',
+        status: 'ステータス',
+        orderDate: '注文日',
+        leadTime: '配達リードタイム',
+        expectedDelivery: '予定配達日'
+      }
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: '再入荷',
+    description: '予算を設定し、需要予測に基づく再入荷提案を確認',
+    budget: {
+      label: '利用可能な予算',
+      hint: 'ドラッグして再入荷予算を調整'
+    },
+    summary: {
+      budget: '予算',
+      allocated: '割り当て済み',
+      remaining: '残り',
+      itemsRecommended: '提案品目数'
+    },
+    recommendations: {
+      title: '提案品目',
+      empty: '予算を増やすと再入荷の提案が表示されます',
+      table: {
+        sku: 'SKU',
+        itemName: '品目名',
+        trend: 'トレンド',
+        forecastedDemand: '予測需要',
+        shortfall: '不足数',
+        recommendedQty: '推奨数量',
+        unitCost: '単価',
+        lineTotal: '小計',
+        leadTime: 'リードタイム'
+      },
+      leadTimeDays: '{days}日',
+      partial: '一部'
+    },
+    placeOrder: '注文する',
+    placingOrder: '注文中...',
+    orderSuccess: '注文{orderNumber}が提出されました！注文タブでご確認ください。',
+    noBudget: '上の予算を設定すると提案が表示されます'
   },
 
   // Finance/Spending
@@ -204,6 +255,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '提出済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'

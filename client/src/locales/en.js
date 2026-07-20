@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -126,7 +127,57 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    },
+    submittedOrders: {
+      title: 'Submitted Orders',
+      empty: 'No restocking orders submitted yet',
+      table: {
+        orderNumber: 'Order Number',
+        items: 'Items',
+        totalValue: 'Total Value',
+        status: 'Status',
+        orderDate: 'Order Date',
+        leadTime: 'Delivery Lead Time',
+        expectedDelivery: 'Expected Delivery'
+      }
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set your budget and get demand-driven restocking recommendations',
+    budget: {
+      label: 'Available Budget',
+      hint: 'Drag to adjust your restocking budget'
+    },
+    summary: {
+      budget: 'Budget',
+      allocated: 'Allocated',
+      remaining: 'Remaining',
+      itemsRecommended: 'Items Recommended'
+    },
+    recommendations: {
+      title: 'Recommended Items',
+      empty: 'Increase your budget to see restocking recommendations',
+      table: {
+        sku: 'SKU',
+        itemName: 'Item Name',
+        trend: 'Trend',
+        forecastedDemand: 'Forecasted Demand',
+        shortfall: 'Shortfall',
+        recommendedQty: 'Recommended Qty',
+        unitCost: 'Unit Cost',
+        lineTotal: 'Line Total',
+        leadTime: 'Lead Time'
+      },
+      leadTimeDays: '{days} days',
+      partial: 'Partial'
+    },
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderSuccess: 'Order {orderNumber} submitted successfully! View it in the Orders tab.',
+    noBudget: 'Set a budget above to generate recommendations'
   },
 
   // Finance/Spending
@@ -204,6 +255,7 @@ export default {
     shipped: 'Shipped',
     processing: 'Processing',
     backordered: 'Backordered',
+    submitted: 'Submitted',
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
